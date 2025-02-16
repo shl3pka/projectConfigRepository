@@ -26,7 +26,7 @@ public class projectConfig {
     Flower flowerRose() {
         Flower flower = new Flower();
         flower.setName("Rose");
-        flower.setColour("Pink");
+        flower.setColour("Red");
         return flower;
     }
     @Bean
