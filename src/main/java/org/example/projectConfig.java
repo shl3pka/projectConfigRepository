@@ -32,7 +32,7 @@ public class projectConfig {
     @Bean
     Wrapping type1() {
         Wrapping wrapping = new Wrapping();
-        wrapping.setType("Shiny");
+        wrapping.setType("Shiny with stars");
         return wrapping;
     }
 }
