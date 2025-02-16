@@ -8,23 +8,31 @@ import org.springframework.context.annotation.Primary;
 @Configuration
 public class projectConfig {
     @Bean
-    Parrot parrot() {
-        Parrot parrot = new Parrot();
-        parrot.setName("Kesha");
-        return parrot;
+    Flower flowerIris() {
+        Flower flower = new Flower();
+        flower.setName("Iris");
+        flower.setColour("White");
+        return flower;
     }
     @Bean
-    Parrot parrotMike() {
-        Parrot parrot = new Parrot();
-        parrot.setName("Mike");
-        return parrot;
+    Flower flowerTulip() {
+        Flower flower = new Flower();
+        flower.setName("Tulip");
+        flower.setColour("Yellow");
+        return flower;
     }
     @Bean
     @Primary
-    Parrot parrotBob() {
-        Parrot parrot = new Parrot();
-        parrot.setName("Bob");
-        return parrot;
+    Flower flowerRose() {
+        Flower flower = new Flower();
+        flower.setName("Rose");
+        flower.setColour("Red");
+        return flower;
     }
-
+    @Bean
+    Wrapping type1() {
+        Wrapping wrapping = new Wrapping();
+        wrapping.setType("Shiny");
+        return wrapping;
+    }
 }

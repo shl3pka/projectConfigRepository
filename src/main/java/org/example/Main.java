@@ -5,7 +5,9 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Main {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(projectConfig.class);
-                Person person = context.getBean(Person.class);
-                person.setName("Max");
+                Flower flower = context.getBean(Flower.class);
+                System.out.println("Flower type: " + flower.getName());
+                Wrapping wrapping = context.getBean(Wrapping.class);
+                System.out.println("Wrapping type: " + wrapping.getType());
     }
 }
